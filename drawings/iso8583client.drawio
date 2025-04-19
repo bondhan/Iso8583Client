@@ -1,0 +1,57 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram name="Page-1" id="Spqjn5AnNsZzxeLIx5v5">
+    <mxGraphModel dx="2854" dy="1188" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gdTBOwk1JQKBDdminWyp-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="gdTBOwk1JQKBDdminWyp-1" target="gdTBOwk1JQKBDdminWyp-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gdTBOwk1JQKBDdminWyp-1" target="gdTBOwk1JQKBDdminWyp-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-95" y="239" />
+              <mxPoint x="-95" y="239" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-1" value="socket client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-155" y="253" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-2" value="server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="253" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-4" value="&amp;lt;&amp;lt;asynchoronous iso8583&amp;gt;&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="35" y="253" width="173" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-7" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="-332" y="144" width="311" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gdTBOwk1JQKBDdminWyp-8" target="gdTBOwk1JQKBDdminWyp-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-8" value="fastapi http server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="253" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gdTBOwk1JQKBDdminWyp-11" target="gdTBOwk1JQKBDdminWyp-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-11" value="Thread Safe Map" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-155" y="162" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-14" value="read" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="170" width="42" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-16" value="write" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-93" y="227" width="43" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gdTBOwk1JQKBDdminWyp-17" target="gdTBOwk1JQKBDdminWyp-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gdTBOwk1JQKBDdminWyp-17" value="Load Test" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Azure_Load_Testing.svg;" vertex="1" parent="1">
+          <mxGeometry x="-505" y="250.4" width="68" height="65.2" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

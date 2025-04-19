@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile-server
+    container_name: server-iso8583
+    ports:
+      - "5000:5000"
+    networks:
+      - app-net
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile-client
+    container_name: client-iso8583
+    ports:
+      - "8000:8000"
+    depends_on:
+      - server
+    networks:
+      - app-net
+    environment:
+      - HOST=server-iso8583
+      - PORT=5000
+
+networks:
+  app-net:
+    driver: bridge
