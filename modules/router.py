@@ -45,15 +45,15 @@ def router(asck, log):
         except asyncio.TimeoutError:
             return JSONResponse(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                content={"sent": f": {value}", "resp": "timeout"}
+                content={"sent": f"{value}", "resp": "timeout"}
             )
         except Exception as e:
             return JSONResponse(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                content={"sent": f": {value}", "resp": f"{e}"}
+                content={"sent": f"{value}", "resp": f"{e}"}
             )
 
-        return {"sent": f": {value}", "resp": f"{resp[0]}"}
+        return {"sent": f"{value}", "resp": f"{resp[0]}"}
 
 
     @app.get("/echo")
@@ -78,15 +78,15 @@ def router(asck, log):
         except asyncio.TimeoutError:
             return JSONResponse(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                content={"sent": f": {value}", "resp": "timeout"}
+                content={"sent": f"{value}", "resp": "timeout"}
             )
         except Exception as e:
             return JSONResponse(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                content={"sent": f": {value}", "resp": f"{e}"}
+                content={"sent": f"{value}", "resp": f"{e}"}
             )
 
-        return {"sent": f": {value}", "resp": f"{resp[0]}"}
+        return {"sent": f"{value}", "resp": f"{resp[0]}"}
 
 
     @app.post("/send")
